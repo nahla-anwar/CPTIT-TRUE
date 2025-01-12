@@ -1,0 +1,308 @@
+:root {
+  --main-color: rgb(62, 130, 252);
+  --second-color: rgba(102, 45, 145, 1);
+}
+
+@font-face {
+  font-family: DINNEXT;
+  src: url(../fonts/DINNextLTArabic-Regular-3.ttf);
+}
+
+/* & global styles */
+
+body {
+  font-family: DINNEXT;
+  background-color: rgb(253, 254, 255);
+  position: relative;
+}
+
+.btn-main,
+.btn-main:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.text-second {
+  color: var(--second-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 45px;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  width: 68px;
+  height: 10px;
+  background-color: rgba(255, 185, 81, 1);
+  border-radius: 5px;
+  position: absolute;
+  top: -15px;
+}
+
+/* & navbar styles */
+
+.header {
+  background-image: url(../images/BackGround.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header .navbar .nav-link {
+  color: black;
+  font-size: 18px;
+}
+
+.header .navbar .nav-link.active {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4a6bf6;
+}
+
+/* & header section styles */
+
+.header .bottom-header .header-content h1 {
+  font-size: 30px;
+}
+
+.header .bottom-header .header-content h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #000;
+}
+
+.header .bottom-header .header-content p {
+  font-size: 24px;
+  max-width: 557px;
+}
+
+.header .bottom-header .header-content .content-btn {
+  font-size: 18px;
+  font-weight: 700;
+  width: 215px;
+  height: 62px;
+}
+
+.header .bottom-header .header-content a.content-btn:hover {
+  color: var(--main-color);
+}
+
+.header .bottom-header .header-content .arrows {
+  margin-top: 80px;
+}
+
+.header .bottom-header .header-content .arrow,
+.advantages .arrows .arrow {
+  font-size: 50px;
+}
+
+/* & lightBox section styles */
+
+.lightBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lightBox .content h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.lightBox .content form .field {
+  background-color: rgba(64, 123, 255, 0.04);
+  border: 2px solid rgba(64, 123, 255, 0.17);
+}
+
+.lightBox .content form textarea.field {
+  resize: none;
+}
+
+.lightBox .content form button {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/* & advantages section styles */
+
+.advantages h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.advantages .cards {
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05);
+}
+
+.advantages .cards .true-card h3 {
+  font-size: 32px;
+  color: rgba(45, 44, 44, 1);
+}
+
+.advantages .cards .true-card p {
+  font-size: 19px;
+  color: rgba(86, 86, 86, 1);
+}
+
+/* & about section styles */
+
+.about .image {
+  background-color: rgba(226, 237, 255, 1);
+}
+
+.about .content {
+  background-color: rgba(244, 248, 255, 1);
+}
+
+.about .content p {
+  font-size: 21px;
+  color: rgba(122, 122, 122, 1);
+  max-width: 556px;
+}
+
+/* & whyTRUE section styles */
+
+.whyTRUE p {
+  font-size: 28px;
+  color: rgba(122, 122, 122, 1);
+  max-width: 556px;
+}
+
+.whyTRUE ol li {
+  font-size: 20px;
+}
+
+.whyTRUE ol li:nth-child(odd) {
+  color: rgba(35, 35, 35, 1);
+}
+
+.whyTRUE ol li:nth-child(even) {
+  color: rgba(119, 119, 119, 1);
+}
+
+.whyTRUE .image .logo h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.whyTRUE .image p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.whyTRUE .image .one {
+  top: 4%;
+  left: 47%;
+}
+
+.whyTRUE .image .one-text {
+  top: 16%;
+  left: 43%;
+}
+
+.whyTRUE .image .two {
+  top: 25.5%;
+  left: 6%;
+}
+
+.whyTRUE .image .two-text {
+  top: 31%;
+  left: 15%;
+}
+
+.whyTRUE .image .three {
+  top: 69%;
+  left: 6%;
+}
+
+.whyTRUE .image .three-text {
+  top: 59%;
+  left: 15%;
+}
+
+.whyTRUE .image .four {
+  top: 90.5%;
+  left: 47%;
+}
+
+.whyTRUE .image .four-text {
+  top: 79%;
+  left: 44%;
+}
+
+.whyTRUE .image .five {
+  top: 69%;
+  left: 87.5%;
+}
+
+.whyTRUE .image .five-text {
+  top: 62%;
+  left: 74%;
+}
+
+.whyTRUE .image .six {
+  top: 25.5%;
+  left: 88%;
+}
+
+.whyTRUE .image .six-text {
+  top: 33%;
+  left: 70%;
+}
+
+/* & contact section styles */
+
+.contact form .field {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.17);
+}
+
+.contact form .field::placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+.contact form textarea.field {
+  resize: none;
+}
+
+.contact form button {
+  color: rgba(64, 64, 64, 1);
+  font-weight: 700;
+  font-size: 25px;
+  width: fit-content;
+}
+
+.contact .circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.contact .details {
+  font-size: 31px;
+}
+
+.contact .phone {
+  direction: ltr;
+}
+
+/* & footer styles */
+
+.footer p {
+  font-size: 20px;
+  color: rgba(61, 61, 61, 1);
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPTIT TRUE</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="header min-vh-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-transparent pt-3">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand m-0" href="#"
+              ><img src="./images/logo.png" alt="CPTIT TRUE logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse gap-3"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">عن المنتج</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">المميزات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">لماذا TRUE؟</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تواصل معنا</a>
+                </li>
+              </ul>
+
+              <button
+                class="btn btn-main btn-lg rounded-pill px-4 fs-6 fw-bold"
+                type="button"
+                id="navBtn"
+              >
+                اطلب نسخة تجريبية
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="bottom-header py-5 row">
+          <div class="header-content py-5 col-md-6">
+            <h1 class="text-uppercase fw-bold text-main">cptit true</h1>
+            <h2 class="mb-3">خطوة نحو الرقمنة</h2>
+            <p class="mb-4">
+              لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا<br />
+              يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت.
+            </p>
+            <div class="d-flex gap-5">
+              <a
+                class="content-btn btn bg-white rounded-pill text-main d-flex align-items-center justify-content-center"
+                href="https://www.youtube.com/"
+                >مشاهدة فيديو <i class="fa-regular fa-circle-play fs-3 me-2"></i
+              ></a>
+              <button
+                class="content-btn btn btn-main rounded-pill"
+                id="trialBtn"
+              >
+                طلب نسخة تجريبية
+              </button>
+            </div>
+
+            <div class="arrows d-flex gap-5">
+              <i class="arrow fa-solid fa-arrow-right text-secondary"></i>
+              <i class="arrow fa-solid fa-arrow-left"></i>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="./images/Asset 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="lightBox z-2 h-100 w-100 position-absolute start-0 top-0 bottom-0 d-none justify-content-center"
+      id="lightBox"
+    >
+      <div
+        class="content bg-white rounded-4 p-5 position-fixed top-50 translate-middle-y"
+      >
+        <h2>طلب نسخة تجريبية</h2>
+        <div class="">
+          <form class="d-flex flex-column gap-3">
+            <div class="d-flex gap-3">
+              <input
+                class="field w-50 p-3 rounded-1"
+                type="email"
+                placeholder="البريد الالكتروني"
+              />
+              <input
+                class="field w-50 p-3 rounded-1"
+                type="text"
+                placeholder="رقم هاتف التواصل"
+              />
+            </div>
+            <textarea
+              class="field p-3 rounded-1"
+              rows="4"
+              placeholder="لماذا تطلب النسخة التجريبية"
+            ></textarea>
+            <button
+              class="btn btn-main px-5 py-2 me-auto"
+              type="button"
+              id="lightBoxBtn"
+            >
+              طلب
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="advantages py-5">
+      <div class="container py-4">
+        <h2 class="text-second mb-5">مميزات TRUE</h2>
+        <div class="cards bg-white p-5 rounded-2">
+          <div class="arrows d-flex gap-5">
+            <i class="arrow fa-solid fa-arrow-right text-secondary me-auto"></i>
+            <i class="arrow fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="row g-5">
+            <div class="true-card col-md-4">
+              <div class="px-3">
+                <img class="mb-3" src="./images/card.png" alt="" />
+                <h3 class="mb-3">اعتماد الدورات</h3>
+                <p>
+                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                  أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت.
+                </p>
+              </div>
+            </div>
+
+            <div class="true-card col-md-4">
+              <div class="px-3">
+                <img class="mb-3" src="./images/card.png" alt="" />
+                <h3 class="mb-3">اعتماد البرامج</h3>
+                <p>
+                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                  أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت.
+                </p>
+              </div>
+            </div>
+
+            <div class="true-card col-md-4">
+              <div class="px-3">
+                <img class="mb-3" src="./images/card.png" alt="" />
+                <h3 class="mb-3">قوالب الإمتثال</h3>
+                <p>
+                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                  أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت.
+                </p>
+              </div>
+            </div>
+
+            <div class="true-card col-md-4">
+              <div class="px-3">
+                <img class="mb-3" src="./images/card.png" alt="" />
+                <h3 class="mb-3">تنبيهات / تصعيد</h3>
+                <p>
+                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                  أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت.
+                </p>
+              </div>
+            </div>
+
+            <div class="true-card col-md-4">
+              <div class="px-3">
+                <img class="mb-3" src="./images/card.png" alt="" />
+                <h3 class="mb-3">تكامل SSO</h3>
+                <p>
+                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                  أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت.
+                </p>
+              </div>
+            </div>
+
+            <div class="true-card col-md-4">
+              <div class="px-3">
+                <img class="mb-3" src="./images/card.png" alt="" />
+                <h3 class="mb-3">مراقبة الموافقة</h3>
+                <p>
+                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                  أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="image col-md-6 py-4 pe-5">
+            <div class="pe-5">
+              <img src="./images/Asset 2.png" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6 pt-5 px-0">
+            <div
+              class="content h-100 d-flex flex-column justify-content-center pe-5"
+            >
+              <div class="pe-5">
+                <h2 class="title text-second mb-4">عن المنتج</h2>
+
+                <p>
+                  الخطوات الرقمية لكفاءة الاعتماد والجامعات يساعد CPTIT TRUE
+                  الجامعات والكليات والدورات التدريبية على أتمتة خطوات الاعتماد
+                  ، بما في ذلك الاعتماد والتقييم وإدارة أوراق اعتماد أعضاء هيئة
+                  التدريس والتخطيط الاستراتيجي ومراجعة البرنامج. يوفر CPTIT TRUE
+                  العمليات المؤتمتة الفعالة لإدارة الاعتماد وتحسين نتائج التعلم.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="whyTRUE py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="title text-second mb-4">لماذا TRUE؟</h2>
+            <p class="mb-4">
+              توفر منصة
+              <span class="fw-bold text-black">CPTITTRUE</span> الرقمية ليس كل
+              ذلك الاعتماد فحسب ، بل توفر البيانات التي تحتاجها لتحسين نتائج
+              التعلم واستراتيجيات التدريس وعملية الاعتماد.
+            </p>
+            <ol class="d-flex flex-column gap-4">
+              <li>
+                مع التقارير التفصيلية ، ستكون لديك البيانات اللازمة لتحسين كل
+                جانب من جوانب برنامجك تقريبًا.
+              </li>
+              <li>
+                تتيح لك ميزة وضع علامات على الفئات تقديم ملاحظات مستهدفة
+                للمعلمين ، مما يؤدي إلى تحسين الاستبقاء.
+              </li>
+              <li>تطابق أداء الطالب بسهولة مع أهداف الدورة المطلوبة.</li>
+              <li>
+                تقليل الوقت وتكاليف الطباعة ونفقات المرافق باستخدام الأدوات
+                الرقمية.
+              </li>
+              <li>تقديم اعتماد آمن من أي مكان</li>
+              <li>حقق نجاحًا برمجيًا باستخدام أمان البرامج والبيانات.</li>
+            </ol>
+          </div>
+
+          <div class="col-md-6">
+            <div class="image position-relative">
+              <img src="./images/Group.png" alt="" />
+              <div
+                class="logo position-absolute top-50 start-50 translate-middle d-flex flex-column justify-content-center align-items-center"
+              >
+                <img src="./images/logo-circle.png" alt="" />
+                <h2 class="text-second">لماذا TRUE؟</h2>
+              </div>
+
+              <p class="one position-absolute text-white">01</p>
+              <p class="one-text position-absolute text-black text-center">
+                التقارير<br />
+                والتحليلات
+              </p>
+
+              <p class="two position-absolute text-white">02</p>
+              <p class="two-text position-absolute text-black text-center">
+                الاحتفاظ <br />
+                والمعالجة
+              </p>
+
+              <p class="three position-absolute text-white">03</p>
+              <p class="three-text position-absolute text-black text-center">
+                الاعتماد <br />
+                الاكاديمي
+              </p>
+
+              <p class="four position-absolute text-white">04</p>
+              <p class="four-text position-absolute text-black text-center">
+                الكفاءة
+              </p>
+
+              <p class="five position-absolute text-white">05</p>
+              <p class="five-text position-absolute text-black text-center">
+                المرونة
+              </p>
+
+              <p class="six position-absolute text-white">06</p>
+              <p class="six-text position-absolute text-black text-center">
+                كيف تعمل
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact bg-main py-5">
+      <div class="container py-5">
+        <h2 class="title text-white mb-5">تواصل معنا</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <form class="d-flex flex-column gap-3">
+              <div class="d-flex gap-3">
+                <input
+                  class="field w-50 p-4 rounded-2"
+                  type="email"
+                  placeholder="البريد الالكتروني"
+                />
+                <input
+                  class="field w-50 p-4 rounded-2"
+                  type="text"
+                  placeholder="الاسم"
+                />
+              </div>
+              <textarea
+                class="field p-4 rounded-2"
+                rows="5"
+                placeholder="اكتب الرسالة هنا .."
+              ></textarea>
+              <button class="btn bg-white px-3 py-2 me-auto" type="button">
+                إرســـــال <img src="./images/send.png" />
+              </button>
+            </form>
+          </div>
+
+          <div class="col-md-4">
+            <ul class="list-unstyled text-white text-start">
+              <li class="mb-4">
+                <div class="circle mb-2">
+                  <i class="fa-regular fa-envelope fs-4"></i>
+                </div>
+                <p class="text-white-50 fs-4 mb-0">E-mail</p>
+                <p class="details">example@cptit.com</p>
+              </li>
+
+              <li>
+                <div class="circle mb-2">
+                  <i class="fa-solid fa-phone-volume fs-4"></i>
+                </div>
+                <p class="text-white-50 fs-4 mb-0">Phone Number</p>
+                <p class="details phone">+966 055123456</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer py-4">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="./images/logo.png" alt="" />
+          <p>جميع الحقوق محفوظة لشركة التناغم الرقمي @ 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
