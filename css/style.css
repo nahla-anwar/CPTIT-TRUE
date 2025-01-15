@@ -8,6 +8,10 @@
   src: url(../fonts/DINNextLTArabic-Regular-3.ttf);
 }
 
+html {
+  scroll-padding-top: 93px;
+}
+
 /* & global styles */
 
 body {
@@ -47,7 +51,7 @@ body {
   background-color: rgba(255, 185, 81, 1);
   border-radius: 5px;
   position: absolute;
-  top: -15px;
+  top: 35px;
 }
 
 /* & navbar styles */
@@ -58,50 +62,57 @@ body {
   background-position: center;
 }
 
-.header .navbar .nav-link {
+.navbar .nav-link {
   color: black;
   font-size: 18px;
 }
 
-.header .navbar .nav-link.active {
+.navbar .nav-link.active {
   font-size: 20px;
   font-weight: 700;
   color: #4a6bf6;
 }
 
+.navbarChange {
+  background-color: rgb(236, 243, 255);
+  top: -50px;
+  transform: translateY(50px);
+  transition: transform 0.5s;
+}
+
 /* & header section styles */
 
-.header .bottom-header .header-content h1 {
+.header .header-content h1 {
   font-size: 30px;
 }
 
-.header .bottom-header .header-content h2 {
+.header .header-content h2 {
   font-size: 60px;
   font-weight: 700;
   color: #000;
 }
 
-.header .bottom-header .header-content p {
+.header .header-content p {
   font-size: 24px;
   max-width: 557px;
 }
 
-.header .bottom-header .header-content .content-btn {
+.header .header-content .content-btn {
   font-size: 18px;
   font-weight: 700;
   width: 215px;
   height: 62px;
 }
 
-.header .bottom-header .header-content a.content-btn:hover {
+.header .header-content a.content-btn:hover {
   color: var(--main-color);
 }
 
-.header .bottom-header .header-content .arrows {
+.header .header-content .arrows {
   margin-top: 80px;
 }
 
-.header .bottom-header .header-content .arrow,
+.header .header-content .arrow,
 .advantages .arrows .arrow {
   font-size: 50px;
 }
@@ -110,6 +121,7 @@ body {
 
 .lightBox {
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
 }
 
 .lightBox .content h2 {
@@ -122,6 +134,10 @@ body {
   border: 2px solid rgba(64, 123, 255, 0.17);
 }
 
+.lightBox .content form .field:focus {
+  outline: none;
+}
+
 .lightBox .content form textarea.field {
   resize: none;
 }
@@ -132,6 +148,10 @@ body {
 }
 
 /* & advantages section styles */
+
+.advantages {
+  padding-block: 60px;
+}
 
 .advantages h2 {
   font-weight: 700;
@@ -170,6 +190,10 @@ body {
 
 /* & whyTRUE section styles */
 
+.whyTRUE {
+  padding-block: 60px;
+}
+
 .whyTRUE p {
   font-size: 28px;
   color: rgba(122, 122, 122, 1);
@@ -188,77 +212,11 @@ body {
   color: rgba(119, 119, 119, 1);
 }
 
-.whyTRUE .image .logo h2 {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.whyTRUE .image p {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.whyTRUE .image .one {
-  top: 4%;
-  left: 47%;
-}
-
-.whyTRUE .image .one-text {
-  top: 16%;
-  left: 43%;
-}
-
-.whyTRUE .image .two {
-  top: 25.5%;
-  left: 6%;
-}
-
-.whyTRUE .image .two-text {
-  top: 31%;
-  left: 15%;
-}
-
-.whyTRUE .image .three {
-  top: 69%;
-  left: 6%;
-}
-
-.whyTRUE .image .three-text {
-  top: 59%;
-  left: 15%;
-}
-
-.whyTRUE .image .four {
-  top: 90.5%;
-  left: 47%;
-}
-
-.whyTRUE .image .four-text {
-  top: 79%;
-  left: 44%;
-}
-
-.whyTRUE .image .five {
-  top: 69%;
-  left: 87.5%;
-}
-
-.whyTRUE .image .five-text {
-  top: 62%;
-  left: 74%;
-}
-
-.whyTRUE .image .six {
-  top: 25.5%;
-  left: 88%;
-}
-
-.whyTRUE .image .six-text {
-  top: 33%;
-  left: 70%;
-}
-
 /* & contact section styles */
+
+.contact {
+  padding-block: 60px;
+}
 
 .contact form .field {
   background-color: rgba(255, 255, 255, 0.04);
@@ -302,7 +260,55 @@ body {
 
 /* & footer styles */
 
+.footer {
+  padding-block: 15px;
+}
+
 .footer p {
   font-size: 20px;
   color: rgba(61, 61, 61, 1);
+}
+
+/* & chat box styles */
+
+.chatBoxIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--main-color);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0px 0px 100px 3px rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+
+.chatBox {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 100px 3px rgb(0 0 0 / 20%);
+
+  transition: width 0.5s, height 0.5s, padding 0.5s;
+
+  overflow: hidden;
+}
+
+.chatBox i {
+  cursor: pointer;
+}
+
+.show {
+  width: 350px;
+  height: 360px;
+  padding: 10px;
 }
